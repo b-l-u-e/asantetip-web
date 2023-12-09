@@ -1,0 +1,69 @@
+//font imports
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+
+@tailwind base;
+
+@layer components {
+  .navbar-active .hamburger div:first-child {
+      @apply rotate-45 translate-y-1.5;
+  }
+  .navbar-active .hamburger div:last-child {
+      @apply -rotate-45 -translate-y-1;
+  }
+  .navbar-active div:first-child div:first-child div:last-child{
+      @apply block lg:flex
+  }
+}
+
+
+@import "select2";
+
+@import "apply";
+@import "index/report_card";
+
+@import "spinner";
+
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { 
+  display: none !important;
+}
+
+
+.segmented-control {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.segmented-control__item {
+  float: left;
+  list-style-type: none;
+}
+
+.segmented-control__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.segmented-control__label {
+  display: block;
+  padding: 0.5em 2em;
+  margin: -1px 0;
+  border-left: 1px solid #ddd;
+  text-align: center;  
+  cursor: pointer;
+}
+
+.segmented-control__item:first-child .segmented-control__label {
+  border-left-width: 0;
+}
+.segmented-control__label:hover {
+  @apply bg-teal-600 text-blue-100;
+}
+.segmented-control__input:checked + .segmented-control__label {
+  @apply bg-teal-900 text-blue-100;
+}

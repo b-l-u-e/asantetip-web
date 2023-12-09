@@ -1,0 +1,26 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "ke.co.div_mpesa",
+    "sha256_cert_fingerprints":
+    ["C3:1D:B2:32:E7:98:C8:F0:1A:94:53:6A:B3:5A:65:59:28:A4:A9:43:77:67:B2:19:14:08:5B:5D:CF:7B:2C:98"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://divpesa.com"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "ke.co.div_mpesa",
+    "sha256_cert_fingerprints":
+    ["C3:1D:B2:32:E7:98:C8:F0:1A:94:53:6A:B3:5A:65:59:28:A4:A9:43:77:67:B2:19:14:08:5B:5D:CF:7B:2C:98"]
+  }
+}]
+

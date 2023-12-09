@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
+
+
+Broadcast::channel('balance-updated', function ($user, $id) {
+    return (int) $user->id === (int) $id;
+});
+
+Broadcast::channel('transaction-updated', function ($user, $id) {
+    return (int) $user->id === (int) $id;
+});
+
 Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
+});
+
+Broadcast::channel('phone.{phone}', function ($phone) {
+    return true;
+});
+
+Broadcast::channel('errors', function ($error) {
+    return true;
 });
