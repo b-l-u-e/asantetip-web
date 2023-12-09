@@ -23,43 +23,44 @@ if (token) {
  * allows your team to easily build robust real-time web applications.
  */
 
-// import Echo from 'laravel-echo';
+import Echo from 'laravel-echo';
 
-// window.Pusher = require('pusher-js');
+window.Pusher = require('pusher-js');
 
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: process.env.MIX_PUSHER_APP_KEY,
-//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-//     forceTLS: true
-// });
-
-// import Echo from "laravel-echo"
-// window.Pusher = require('pusher-js');
-
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: process.env.MIX_PUSHER_APP_KEY,
-//     // cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-//     wsHost: window.location.hostname,
-//     wsPort: 6001,
-//     disableStats: true,
-//     forceTLS: false
-// });
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: process.env.MIX_PUSHER_APP_KEY,
+    cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+    forceTLS: true
+});
 
 
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: process.env.MIX_PUSHER_APP_KEY,
-//     wsHost: window.location.hostname,
-//     wsPort: 6001,
-//     // wssPort: 6001,
-//     forceTLS: false,
-//     // encrypted: true,
-//     disableStats: true,
-//     auth: { headers: { Authorization: 'Bearer sometoken' } },
-//     authEndpoint: `http://${window.location.hostname}/api/broadcasting/auth`, // OR
-//   })
+import Echo from "laravel-echo"
+window.Pusher = require('pusher-js');
+
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: process.env.MIX_PUSHER_APP_KEY,
+    // cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+    wsHost: window.location.hostname,
+    wsPort: 6001,
+    disableStats: true,
+    forceTLS: false
+});
+
+
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: process.env.MIX_PUSHER_APP_KEY,
+    wsHost: window.location.hostname,
+    wsPort: 6001,
+    // wssPort: 6001,
+    forceTLS: false,
+    // encrypted: true,
+    disableStats: true,
+    auth: { headers: { Authorization: 'Bearer sometoken' } },
+    authEndpoint: `http://${window.location.hostname}/api/broadcasting/auth`, // OR
+  })
 
 
 
