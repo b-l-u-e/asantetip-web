@@ -22,15 +22,15 @@ const VideoModal = ({ isOpen, onRequestClose, videoUrl }) => {
           </button>
         </div>
         <div className="p-6">
-          <iframe
-            width="100%"
-            height="400"
-            src={videoUrl}
-            style={{ border: '0' }}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Video"
-          ></iframe>
+          <video
+            controls
+            autoPlay
+            muted
+            className="w-full h-64 md:h-96"
+          >
+            <source src={videoUrl} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </Modal>
