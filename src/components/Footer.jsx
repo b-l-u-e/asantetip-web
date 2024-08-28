@@ -42,12 +42,12 @@ const Footer = () => {
             >
               Home
             </a>
-            <a
+            {/* <a
               href="/about"
               className="hover:text-deep-muted-blue-light transition-colors duration-300 font-sans"
             >
               About
-            </a>
+            </a> */}
             <a
               href="/services"
               className="hover:text-deep-muted-blue-light transition-colors duration-300 font-sans"

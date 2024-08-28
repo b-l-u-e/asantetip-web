@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-asantetipwebsite-dev-5a167-authRole",
+      "UnauthRoleArn": "arn:aws:iam::300777915155:role/amplify-asantetipwebsite-dev-5a167-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::300777915155:role/amplify-asantetipwebsite-dev-5a167-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-asantetipwebsite-dev-5a167-deployment",
+      "UnauthRoleName": "amplify-asantetipwebsite-dev-5a167-unauthRole",
+      "StackName": "amplify-asantetipwebsite-dev-5a167",
+      "StackId": "arn:aws:cloudformation:us-east-1:300777915155:stack/amplify-asantetipwebsite-dev-5a167/5e52cb70-6553-11ef-b043-0affe9a64adb",
+      "AmplifyAppId": "d3gg8xl0xwwswj"
+    }
+  }
+}
