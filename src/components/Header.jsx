@@ -35,7 +35,6 @@ const Header = ({ bgColor = 'bg-transparent' }) => {
         </div>
         <nav className="hidden md:flex space-x-4">
           <a href="/" className="hover:text-deep-muted-blue-light">Home</a>
-          <a href="/about" className="hover:text-deep-muted-blue-light">About</a>
           <a href="/services" className="hover:text-deep-muted-blue-light">Services</a>
           {/* <a href="/contact" className="hover:text-deep-muted-blue-light">Contact</a> */}
         </nav>
@@ -49,7 +48,6 @@ const Header = ({ bgColor = 'bg-transparent' }) => {
         <div className="md:hidden">
           <nav className="flex flex-col space-y-2 p-4">
             <a href="/" className="hover:text-deep-muted-blue-light">Home</a>
-            {/* <a href="/about" className="hover:text-deep-muted-blue-light">About</a> */}
             <a href="/services" className="hover:text-deep-muted-blue-light">Services</a>
             <a href="/contact" className="hover:text-deep-muted-blue-light">Contact</a>
           </nav>
