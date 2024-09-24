@@ -36,7 +36,7 @@ const Header = ({ bgColor = 'bg-transparent' }) => {
         <nav className="hidden md:flex space-x-4">
           <a href="/" className="hover:text-deep-muted-blue-light">Home</a>
           <a href="/services" className="hover:text-deep-muted-blue-light">Services</a>
-          {/* <a href="/contact" className="hover:text-deep-muted-blue-light">Contact</a> */}
+          <a href="/blog" className="hover:text-deep-muted-blue-light">Blog</a>
         </nav>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none" aria-label="Toggle menu">
@@ -49,7 +49,7 @@ const Header = ({ bgColor = 'bg-transparent' }) => {
           <nav className="flex flex-col space-y-2 p-4">
             <a href="/" className="hover:text-deep-muted-blue-light">Home</a>
             <a href="/services" className="hover:text-deep-muted-blue-light">Services</a>
-            <a href="/contact" className="hover:text-deep-muted-blue-light">Contact</a>
+            <a href="/blog" className="hover:text-deep-muted-blue-light">Blog</a>
           </nav>
         </div>
       )}
