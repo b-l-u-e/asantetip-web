@@ -6,9 +6,7 @@ import Content from "./Content";
 import VideoModal from "./VideoModal";
 
 const LandingPage = () => {
-  const videoUrl =
-    "https://res.cloudinary.com/domdlvos5/video/upload/v1724608084/pb6zfedkncqkdtk7xnag.mp4";
-
+  const videoUrl = "https://d5kdzp2ribwvg.cloudfront.net/AsanteTip.mp4";
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
